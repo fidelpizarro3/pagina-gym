@@ -1,0 +1,23 @@
+Cuando un usuario hace clic en un turno para reservarlo, tu página realiza el siguiente proceso:
+
+1. Captura el clic
+En la función mostrarDisponibilidad(), cada div con clase .turno tiene un event listener que llama a reservarTurno(dia, hora, div) cuando se hace clic.
+2. Función reservarTurno(dia, hora, div)
+Obtiene los datos actuales del usuario logueado, la disponibilidad de turnos y el array de usuarios desde localStorage.
+Valida varias condiciones:
+Si el usuario está logueado.
+Si tiene créditos disponibles.
+Si hay lugares disponibles en ese turno.
+Si el usuario ya tiene ese turno reservado.
+Si alguna validación falla, muestra un alert con el motivo y no permite la reserva.
+3. Reserva el turno
+Si pasa todas las validaciones:
+Agrega el turno al array de turnos del usuario.
+Descuenta un crédito al usuario.
+Resta un lugar en la disponibilidad de ese turno.
+Actualiza el usuario en el array de usuarios.
+Guarda los cambios en localStorage para usuario, usuarios y disponibilidad.
+Muestra un mensaje de confirmación con los créditos restantes.
+Recarga la página para actualizar la vista y reflejar los cambios.
+Resumen:
+El sistema asegura que solo usuarios logueados, con créditos y disponibilidad, puedan reservar turnos, y actualiza todo en el almacenamiento local para que los datos sean persistentes y consistentes.

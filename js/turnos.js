@@ -55,9 +55,9 @@ function mostrarDisponibilidad() {
 
 // ==================== RESERVAR UN TURNO ====================
 function reservarTurno(dia, hora, div) {
-  let usuario = JSON.parse(localStorage.getItem('usuarioActual'));
-  let disponibilidad = JSON.parse(localStorage.getItem('disponibilidad'));
-  let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+  let usuario = JSON.parse(localStorage.getItem('usuarioActual')); //esto agarra el objeto de usuario actual del localStorag
+  let disponibilidad = JSON.parse(localStorage.getItem('disponibilidad')); //esto agarra el objeto de disponibilidad del localStorage
+  let usuarios = JSON.parse(localStorage.getItem('usuarios')) || []; //esto agarra el array de usuarios del localStorage
 
   // Validaciones antes de reservar
   if (!usuario) {
