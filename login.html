@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Turnos Gym</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1> Powerhouse</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <!-- El botón cerrar sesión se agrega por JS -->
+      </ul>
+    </nav>
+  </header>
+
+  <main id="login">
+    <div class="form-container">
+      <section>
+        <h2>Iniciar Sesión</h2>
+        <form id="formLogin" class="form-estilizado">
+          <input type="email" id="loginEmail" placeholder="Email" required>
+          <input type="password" id="loginPassword" placeholder="Contraseña" required>
+          <button type="submit">Ingresar</button>
+          <p id="mensajeLogin" class="mensaje-error"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>¿No tienes una cuenta? Registrate</h2>
+        <form id="formRegistro" class="form-estilizado">
+          <input type="email" id="registroEmail" placeholder="Email" required>
+          <input type="password" id="registroPassword" placeholder="Contraseña" required>
+          <button type="submit">Registrarme</button>
+          <p id="mensajeRegistro" class="mensaje-error"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Turnos Gym. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+    <script src="js/session.js"></script>
+
+</body>
+</html>

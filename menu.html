@@ -1,0 +1,37 @@
+<!-- menu.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menú Principal - Turnos Gym</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Turnos Gym</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <!-- El botón cerrar sesión y Menú se agregan por JS -->
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu-opciones">
+    <h2>¿Qué querés hacer?</h2>
+    <button onclick="window.location.href='turnos.html'" class="btn-grande">Sacar Turno</button>
+    <button onclick="window.location.href='misturnos.html'" class="btn-grande">Ver Mis Turnos</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Turnos Gym. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+    <script src="js/session.js"></script>
+
+</body>
+</html>

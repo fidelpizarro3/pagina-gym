@@ -1,0 +1,551 @@
+/* ----------- RESET GENERAL ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: black;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/imagen.gym.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ----------- ENCABEZADO ----------- */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ----------- NAVEGACIÓN ----------- */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+/* ----------- PRINCIPAL ----------- */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ----------- BOTONES Y ENTRADAS ----------- */
+button, input {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* ----------- SECCIÓN TURNOS ----------- */
+#turnos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dia-turnos {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 45px;
+  min-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.dia-turnos h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.turno {
+  background-color: #f0f0f0;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.turno:hover {
+  background-color: lightgreen;
+}
+
+/* ----------- PRESENTACIÓN ----------- */
+.presentacion, #login {
+  background-color: gainsboro;
+  text-align: center;
+  padding: 100px 40px;
+  margin: 80px auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.presentacion img {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+/* ----------- BLOQUES CENTRADOS ----------- */
+.h2-turno, .ver-turnos, .volver {
+  background-color: rgba(245, 245, 245, 0.9);
+  text-align: center;
+  padding: 10px;
+  margin: 30px auto;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+/* ----------- BENEFICIOS ----------- */
+.beneficios {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.beneficios h3 {
+  margin-bottom: 1rem;
+}
+
+.beneficios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.beneficios li {
+  margin: 0.5rem 0;
+}
+
+/* ----------- SOBRE NOSOTROS ----------- */
+.sobre-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+.sobre-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.sobre-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sobre-imagen {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ----------- FRASES Y TESTIMONIOS ----------- */
+.frase-motivacional {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.horarios, .testimonios {
+  background-color: rgba(245, 245, 245, 0.95);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.testimonios blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 600px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ----------- MENSAJE EXITO ----------- */
+#mensaje {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ----------- FOOTER ----------- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+
+/* ----------- MENU ----------- */
+
+.menu-opciones {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn-grande {
+  font-size: 24px;
+  padding: 20px 40px;
+  margin: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-grande:hover {
+  background-color: #45a049;
+}
+
+
+/* ----------- contacto ----------- */
+
+main.contacto {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #a09c9c; /* gris muy claro */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+/* Formulario y mapa en dos columnas */
+.contacto-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.formulario-contacto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-contacto button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #555;
+}
+
+.mapa {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  border: 0;
+}
+
+/* Redes sociales centradas abajo */
+.info-contacto {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.redes-contacto {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.redes-contacto li {
+  margin: 10px 0;
+}
+
+.redes-contacto a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.redes-contacto i {
+  margin-right: 8px;
+}
+
+.formulario-contacto textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ----------- MIS TURNOS ----------- */
+.mis-turnos-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.mis-turnos-container h2 {
+  color: #3a7ca5;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+#infoCreditosMisTurnos {
+  font-size: 1.1em;
+  color: #2d6a4f;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+#listaTurnos {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+#listaTurnos li {
+  background: #e3f2fd;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #1b4965;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaTurnos button {
+  background: #ef476f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#listaTurnos button:hover {
+  background: #d90429;
+}
+
+.volver {
+  background: #3a7ca5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.volver:hover {
+  background: #1b4965;
+}
+
+/* Estilos para formularios de login y registro */
+.form-container {
+  max-width: 400px;
+  margin: 60px auto 40px auto;
+  background: rgba(255,255,255,0.97);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px 24px 24px 24px;
+}
+
+.form-container section {
+  margin-bottom: 32px;
+}
+
+.form-estilizado {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-estilizado input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  font-size: 1em;
+  background: #f7f7f7;
+  transition: border 0.2s;
+}
+
+.form-estilizado input:focus {
+  border: 1.5px solid #3a7ca5;
+  outline: none;
+}
+
+.form-estilizado button {
+  background: #3a7ca5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-estilizado button:hover {
+  background: #1b4965;
+}
+
+.mensaje-error {
+  color: #ef476f;
+  font-size: 0.95em;
+  min-height: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+/* ----------- NUEVAS REGLAS ----------- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+/* Botón cerrar sesión */
+.btn-cerrar-sesion {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 24px;
+  transition: background 0.2s;
+}
+
+.btn-cerrar-sesion:hover {
+  background: #b71c1c;
+}
+
+.nav li.cerrar-sesion {
+  margin-left: auto;
+}
+
+.filtro-turnos {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 24px 0 18px 0;
+  flex-wrap: wrap;
+}
+
+.filtro-turnos label {
+  font-weight: bold;
+}
+#letrasfiltro {
+  font-size: 1.1em;
+  color: #ffffff;
+}
+.filtro-turnos select,
+.filtro-turnos input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bdbdbd;
+  font-size: 1em;
+}
+
+

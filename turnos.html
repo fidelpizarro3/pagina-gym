@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Reservar Turnos - Turnos Gym</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+    <h1> Powerhouse</h1>
+<nav>
+  <ul class="nav">
+    <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    <!-- El botón cerrar sesión se agrega por JS -->
+  </ul>
+</nav>
+</header>
+
+<main>
+    <section class="opciones">
+<h2>¡Bienvenido!</h2>
+
+</section>
+
+    <section>
+<h2 class="h2-turno">Días y Horarios</h2>
+<div id="turnos">
+    <section class="dia-turnos">
+    <h3>Lunes</h3>
+    <div class="turno">08:00 - 09:00</div>
+    <div class="turno">10:00 - 11:00</div>
+    <div class="turno">12:00 - 13:00</div>
+    <div class="turno">18:00 - 19:00</div>
+    <div class="turno">20:00 - 21:00</div>
+    <div class="turno">22:00 - 23:00</div>
+</section>
+
+    <section class="dia-turnos">
+    <h3>Martes</h3>
+    <div class="turno">08:00 - 09:00</div>
+    <div class="turno">10:00 - 11:00</div>
+    <div class="turno">12:00 - 13:00</div>
+    <div class="turno">18:00 - 19:00</div>
+    <div class="turno">20:00 - 21:00</div>
+    <div class="turno">22:00 - 23:00</div>
+    </section>
+
+    <section class="dia-turnos">
+    <h3>Miércoles</h3>
+    <div class="turno">08:00 - 09:00</div>
+    <div class="turno">10:00 - 11:00</div>
+    <div class="turno">12:00 - 13:00</div>
+    <div class="turno">18:00 - 19:00</div>
+    <div class="turno">20:00 - 21:00</div>
+    <div class="turno">22:00 - 23:00</div>
+    </section>
+
+    <section class="dia-turnos">
+    <h3>Jueves</h3>
+    <div class="turno">08:00 - 09:00</div>
+    <div class="turno">10:00 - 11:00</div>
+    <div class="turno">12:00 - 13:00</div>
+    <div class="turno">18:00 - 19:00</div>
+    <div class="turno">20:00 - 21:00</div>
+    <div class="turno">22:00 - 23:00</div>
+    </section>
+
+    <section class="dia-turnos">
+    <h3>Viernes</h3>
+    <div class="turno">08:00 - 09:00</div>
+    <div class="turno">10:00 - 11:00</div>
+    <div class="turno">12:00 - 13:00</div>
+    <div class="turno">18:00 - 19:00</div>
+    <div class="turno">20:00 - 21:00</div>
+    <div class="turno">22:00 - 23:00</div>
+    </section>
+
+            <section class="dia-turnos">
+    <h3>Sabados</h3>
+    <div class="turno">08:00 - 09:00</div>
+    <div class="turno">09:00 - 10:00</div>
+    <div class="turno">10:00 - 11:00</div>
+    <div class="turno">11:00 - 12:00</div>
+
+    </section>
+</div>
+</section>
+
+<!-- Filtro y búsqueda de turnos -->
+<div class="filtro-turnos">
+  <label for="filtroDia" id="letrasfiltro">Filtrar por día:</label>
+  <select id="filtroDia">
+    <option value="todos">Todos</option>
+    <option value="Lunes">Lunes</option>
+    <option value="Martes">Martes</option>
+    <option value="Miércoles">Miércoles</option>
+    <option value="Jueves">Jueves</option>
+    <option value="Viernes">Viernes</option>
+    <option value="Sabados">Sabados</option>
+  </select>
+  <input type="text" id="busquedaTurno" placeholder="Buscar horario (ej: 18:00)">
+</div>
+
+<button id="verMisTurnos">Ver mis turnos</button>
+    <div id="mensaje"></div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Turnos Gym. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/turnos.js"></script>
+<script src="js/session.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto - Turnos Gym</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>CrossFit gym</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <!-- El botón cerrar sesión se agrega por JS -->
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contacto">
+    <h2>Contacto</h2>
+
+    <div class="contacto-layout">
+      <section class="formulario-contacto">
+        <form id="formContacto" action="https://formsubmit.co/fidel.pizarro@est.fi.uncoma.edu.ar" method="POST" novalidate>
+          <input type="hidden" name="_next" value="gracias.html" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label for="nombre" id="labelNombre">Nombre (obligatorio):</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <span class="error" id="errorNombre"></span>
+
+          <label for="email" id="labelEmail">Email (obligatorio):</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error" id="errorEmail"></span>
+
+          <label for="telefono" id="labelTelefono">Teléfono (opcional):</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: 2994000000" />
+          <span class="error" id="errorTelefono"></span>
+
+          <label for="mensajeContacto" id="labelMensaje">Mensaje (opcional):</label>
+          <textarea id="mensajeContacto" name="mensaje" rows="4"></textarea>
+          <span class="error" id="errorMensaje"></span>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section class="mapa">
+        <h3>¿Dónde estamos?</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.603991882446!2d-68.21670652311025!3d-38.95587440017323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960bcd002eb0005d%3A0x6b39e3536929702f!2sVortex%20Crosstraining!5e0!3m2!1ses!2sar!4v1750987387383!5m2!1ses!2sar"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </div>
+
+    <section class="info-contacto">
+      <h3>También podés encontrarnos en:</h3>
+      <ul class="redes-contacto">
+        <li>
+          <a href="https://wa.me/5492994000000" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> WhatsApp: +54 9 299 400-0000
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/turnosgym" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i> Instagram: @turnosgym
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/turnosgym" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i> Facebook: Turnos Gym
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Turnos Gym. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/contacto.js"></script>
+  <script src="js/session.js"></script>
+</body>
+</html>
